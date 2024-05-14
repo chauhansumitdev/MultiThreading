@@ -48,8 +48,8 @@ extends Thread
 thread class
 constructors
 Thread()
-Thread(String name)
-Thread(Runnable r)
+Thread(String name) // using the thread class providing the name of the thread
+Thread(Runnable r) // the instance is of runnable int.
 Thread(Runnable r, String name)
 
 methods :
