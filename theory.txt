@@ -36,6 +36,33 @@ active -- it contains two states --
 HOW TO GET THE INFO ABOUT THREAD STATES ...
 
 java.lang.Thread.State -- enum vals -- Thread.getState();
+.. ref ThreadStates.java
 
 
+
+CREATION 
+
+implements Runnable 
+extends Thread 
+
+thread class
+constructors
+Thread()
+Thread(String name)
+Thread(Runnable r)
+Thread(Runnable r, String name)
+
+methods :
+run start sleep join -- waits for a thread to die getPriority setPriority  getName currentThread getId suspend resume stop isDeamon setDeamon interrupt isInterrupted interrupted
+
+
+
+
+
+runnable interface:
+run() 
+
+when the thread is in the runnable state and it  gets the chance to run it targets the run() method
+
+ref Creation.java
 
