@@ -66,3 +66,68 @@ when the thread is in the runnable state and it  gets the chance to run it targe
 
 ref Creation.java
 
+
+
+THREAD SCHEDULER : "the guy with responsibilities"
+a thread is only chosen by the scheduler if only it is in the runnable state
+two factors for scheduling the thread 
+Priority and Time of arrival
+
+Priority - lies between 1 and 10. 
+
+arrival of time - it is considered when two threads of same priority are fighting for runtime
+
+CAN WE START A THREAD TWICE --?
+no it tried to do so then the thread would give exception.
+
+*** -- each thread starts on a new call stack.. 
+if the run method is called directly without invoking the start -- then it goes to the call stack of the current executing stack not the new ones, will work like simple java execution not like a thread.
+
+
+join() -- waits for a thread to finish before starting the execution
+
+
+
+
+DEAMON 
+deamon thread
+a service provide thread -- provides services to the user threads.  
+its life depends onthe mercy of the user threads that is when all the user threads dies jvm terminates this thead automatically.
+low priority thread
+
+THRED POOL --
+contains worker threads that need to get asignes a task
+after fininshing the task they get back to the thread POOL
+
+
+
+SYNCHRONISATION BETWEEN THREADS 
+SYNCHRONISATION is the capability to control the access of multiple threads to any shread resource
+
+fixes --
+thread interferernce
+consistency problem
+
+types --
+process SYNCHRONISATION
+thread SYNCHRONISATION
+    mutual exclusive
+        synchronised block
+        synchronised method
+        static SYNCHRONISATION
+    co-operation (inter thread communication)
+
+mutual exclusive 
+prevents the interference of the threads while shareing the data
+
+
+
+lock concept --
+every object has a lock associated with it. 
+a thread that needs a consistent access to the objects fields has to acquire the object lock before accessing them and then release the lock when done 
+
+ref Synchronisation.java
+
+
+
+
