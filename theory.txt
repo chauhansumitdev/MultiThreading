@@ -1,0 +1,41 @@
+all we are doing to do is to get use of multitaksing
+this can be achieved by
+multiprocessing
+multithreading
+
+maintaining concurrency between these processes is a heavy task because there a lots of costraints from the memory side as well the os side.
+to make things easier we use multithreading because they share the same memory space so not a lot of constraints
+
+make use of the Thread class
+available fun() --
+
+start() -- start a Thread
+run() run a particular action in a Thread
+sleep() sleeps a thread for a certain amount of time
+
+
+a lot more ... lean as you write..
+
+
+LIFECYCLE...
+the thread will always in any one of the states
+new  active blocked/waiting time-waiting terminated
+
+new -- creation of the thread
+active -- it contains two states -- 
+    runnable -- important stage -- this stage is the stage where is the threads starts exec or is already in exec. This works by the time given by the thread scheduler . Like if its the thread thurn , then if its in runnable stage and it is its first time starting it then the starts from the beginning, if it has already executed for some portion then it is resumed. 
+
+    running -- the stage where the thread is running actually.
+
+ blocked/waiting -- self explanatory -- also it has no time constraint
+
+ time- waiting -- prevents deadlock/ starvation in any case the thread never comes to runnable stage. it is given time-waiting stage.
+
+ termininated -- self explanatory
+
+HOW TO GET THE INFO ABOUT THREAD STATES ...
+
+java.lang.Thread.State -- enum vals -- Thread.getState();
+
+
+
